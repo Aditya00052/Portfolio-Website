@@ -1,0 +1,581 @@
+body{
+    background: #000000;
+    font-family: "Poppins", Arial, sans-serif;                        /* "Poppins", Arial, sans-serif */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* Navbar: */
+.navbar{
+    /* margin-top: 10px; */
+    padding: 10px 0;
+    background-color: #000000;
+}
+
+.container-fluid{                      /* so that we don't have to write max-width: 75%; in each section*/
+    max-width: 75%;
+}
+
+.navbar-brand{
+    font-weight: 900;
+    font-size: 24px;
+    /* font-style: normal; */
+    color: #ffffff;
+    /* margin-right: 60px; */
+}
+
+.navbar-brand:hover{
+    color: #ffbd39;
+}
+
+/* .nav-item{
+    color: #ffffff;
+} */
+
+.nav-link{
+    color: #ffffff;
+    /* padding: 10px; */
+    margin: 0px 10px;
+    font-size: 16px;
+}
+
+/* .nav-link:hover{
+    color: #ffbd39;
+} */
+
+.nav-link:hover,
+.nav-link:focus{
+    color: #ffbd39;
+}
+
+/* More specific selector to target the active link */
+/* .navbar .nav-link.active{
+    color: #ffbd39;
+} */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M1.5 12.5h13M1.5 8h13M1.5 3.5h13'/%3E%3C/svg%3E");
+}
+
+
+
+
+
+
+/* Home Section */
+.home-section{
+    color: white;
+    margin-top: 50px;
+}
+
+/* Intro Section */
+.intro{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.my-name{
+    display: inline;
+    color: #ffbd39;
+}
+
+#typing-animation{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.custom-btn-links{
+    border-color: #ffffff;
+    color: #ffffff;
+    padding: 16px 24px;
+    margin-right: 10px;
+
+    /* Later Changes(During skills section) */
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.custom-btn-links:hover{
+    background-color: #ffbd39;
+
+}
+
+.custom-btn-cv{
+    background-color: #ffbd39;
+    padding: 16px 24px;
+    /* margin-right: 10px; */
+    margin-top: 10px;
+
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.custom-btn-cv:hover{
+    background-color: #ffbd39;
+}
+
+
+
+
+/* Image Section(DONT MESS WITH THIS) */       
+.home-section {
+    position: relative;
+}
+
+.img-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.8;                 /* Opacity of img */
+    width: 100%;                 /* Ensure it spans the entire width of the parent */
+    max-width: 800px;           /* Increase this value as needed*/
+}
+
+.intro-section {
+    z-index: 1;
+}
+
+.img-behind-text {
+    width: 100%;
+    max-width: 500px;               /* Size of img */
+    opacity: 0.8;                   /* Ensure visibility without overpowering the text */
+}
+
+@media (max-width: 1199px) {
+    .intro-section {
+        text-align: center;
+    }
+}
+  
+
+/* Following change: 13/12/24 */
+/* Image in the img-section (large screens) */
+.img-section img {
+    width: 100%;                /* Or any desired percentage */
+    max-width: 500px;           /* Adjust to resize */
+    height: auto;               /* Maintain aspect ratio */
+}
+
+
+
+/* About Section */
+.about-section{
+    /* display: flex; */
+    margin-top: 260px;       /* 112 */
+    color: #ffffff;
+}
+
+.about-title{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.about-desc{
+    color: #999999;
+}
+
+.about-list{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 35px;
+}
+
+.item-custom{
+    margin-bottom: 10px;
+}
+
+.li-span1{
+    display: inline-block;
+    font-weight: 600;
+    width: 130px;
+}
+
+.li-span2{
+    color: #999999;
+}
+
+
+
+
+
+
+/* Experience */
+.exp-section{
+    margin-top: 250px;
+    color: #ffffff;
+}
+.exp-heading{
+    color: #ffffff;
+    text-align: center;
+}
+
+.underline{
+    height: 5px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(244, 244, 125) 20%, rgb(238, 238, 36) 50%, #ffbd39 100%);
+}
+
+.row-exp{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #999999;
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.duration{
+    font-weight: 900;
+    font-size: 26px;
+    color: #ffbd39;
+}
+
+.designation{
+    color: #ffffff;
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.comp-name{
+    display: inline;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.comp-img{
+    width: 90px;
+    height: auto;
+    margin-left: 10px
+}
+
+.exp-desc{
+    margin: 25px 0;
+}
+
+
+
+
+
+/* Projects Section*/
+.projects-section{
+    margin-top: 250px;
+    color: #ffffff;
+}
+
+.projects-heading{
+    text-align: center;
+}
+
+.row-projects{
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.project-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 180px;
+    transition: transform 0.3s ease-out;
+}
+
+.project-img:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.project-title{
+    font-size: 20px;
+    margin: 16px 0;
+    font-weight: 500;
+    transition: color 0.5s;           /* for smooth color transistion */
+}
+
+.project-title:hover{
+    color: #ffbd39;
+}
+
+.project-title a{
+    color: inherit; /* Inherit the color from the parent .project-title */
+    text-decoration: none; /* Remove the underline from the link */
+}
+
+.project-desc{
+    color: #999999;
+}
+
+
+
+
+
+
+
+/* GitHub Section */
+.github-section{
+    max-width: 100%;                              /* to increase the fixed width of the container */
+    padding: 100px 0;                            /* padding: 160px 112px; */ 
+    text-align: center;
+
+    /* Bg img: */
+    background-image: url(../images/bg_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    color: #ffffff;
+
+    margin-top: 100px;
+}
+
+.github-heading{
+    font-size: 40px;
+    font-weight: 900;
+    margin: 30px 0;
+}
+
+.custom-btn-github{
+    background-color: #ffbd39;
+    padding: 16px 48px;
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.custom-btn-github:hover{
+    background-color: #ffbd39;
+}
+
+
+
+
+
+/* Education Section */
+.education-section{
+    margin-top: 200px;
+}
+
+.row-edu{
+    color: #999999;
+    margin-top: 25px;
+}
+
+.col-edu{
+    padding: 15px;
+}
+
+.edu-contents{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+
+.courses{
+    margin: 20px 0;
+}
+
+
+
+
+
+/* Skills and Expertise Section */
+.skills-expertise-section{
+    margin-top: 200px;
+}
+
+/* Skills section */
+.skills-section{
+    margin: 30px 0;
+}
+
+.skills-heading{
+    color: #ffbd39;
+    margin-bottom: 20px;
+}
+
+.custom-btn-skills{
+    border-color: #999999;
+    color: #ffffff;
+    padding: 16px 24px;
+    margin: 8px;
+
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.custom-btn-skills:hover{
+    background-color: #000000;
+    border-color: #999999;
+}
+
+
+/* Expertise Section */
+.expertise-section{
+    color: #ffffff;
+}
+
+.expertise-section h3:hover{            /* to override the orange color we get from project-title:hover */
+    color: #ffffff;
+}
+
+
+
+
+
+/* Contact Section */
+.contact-section{
+    margin-top: 200px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact-heading-1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.contact-heading-2{
+    margin-top: 48px;
+    color: #999999;
+}
+
+.contact-info{
+    margin-top: 100px;
+}
+
+.contact-info .col-md-6{     /* to generate magine b/w the divs when screen size is col-md-6 */
+    margin-top: 20px;
+}
+
+.circle-backdrop{
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-backdrop i{
+    color: #ffbd39;
+    font-size: 27px;
+    /* margin-top: 20px; */
+}
+
+.contact-info h3{
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 32px;
+}
+
+.contact-info p{
+    margin-top: 32px;
+}
+
+.contact-info a{
+    color: inherit; /* Inherit the color from the parent .project-title */
+    text-decoration: none; /* Remove the underline from the link */
+}
+
+ 
+
+.contact-social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+  
+.find-me-on {
+    font-weight: 600;
+    margin-bottom: 0;            /* to override p's original properties */
+    color: #999999;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-item {
+    margin-left: 15px;
+}
+
+.social-item a{                           /* to remove the underline from the anchor tag */
+    text-decoration: none;
+}
+
+.circle-backdrop-2 {
+    width: 55px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-backdrop-2 i {
+    color: #ffbd39;
+    font-size: 27px;
+    transition: color 0.3s;
+}
+
+.circle-backdrop-2 i:hover{
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+/* Footer Section */
+.footer-section{
+    margin: 150px 0;
+    color: #999999;
+    text-align: center;
+    max-width: 100%;
+}
+
+.footer-section a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* For highliting the nav-links: */
+.active-nav {
+    color: #ffbd39 !important; 
+}
+

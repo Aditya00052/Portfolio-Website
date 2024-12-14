@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Bootstrap Style CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- FOnt Awesome CDN -->
+    <script src="https://kit.fontawesome.com/904f155d9b.js" crossorigin="anonymous"></script>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- External JS: -->
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-xl bg-body-primary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Aditya Azad Singh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span style="color: rgba(255, 255, 255, 0.5);">Menu</span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>      <!-- class="nav-link active" -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills and Expertise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Home Section -->
+  <div class="container-fluid" id="home">
+    <div class="home-section row">
+      <div class="intro-section col-xl-6 col-12">
+        <span class="sub-heading">HELLO!</span>
+        <h1 class="intro">I'm <p class="my-name">Aditya Azad Singh</p></h1>
+        <br>
+        <span id="typing-animation"></span>
+        <br><br>
+        <h2>Data Scientist</h2>
+        <br>
+        <p>
+          <a href="https://www.linkedin.com/in/aditya-singh-57aa86216" target="_blank"><button type="button" class="btn btn-outline-dark rounded-pill custom-btn-links">LinkedIn</button></a>
+          <a href="https://www.github.com/Aditya00052" target="_blank"><button type="button" class="btn btn-outline-dark rounded-pill custom-btn-links">GitHub</button></a>
+          <!-- <a href="https://public.tableau.com/app/profile/sdabral/vizzes" target="_blank"><button type="button" class="btn btn-outline-dark rounded-pill custom-btn-links">Tableau</button></a> -->
+        </p>
+        <a href="https://drive.google.com/file/d/1QAoPpOusyElQ5OCw3XgOPOMOClCyGPFZ/view?usp=sharing" target="_blank"><button type="button" class="btn btn-outline-dark rounded-pill custom-btn-cv">Download CV</button></a>
+        <!-- Add the image inside the intro-section -->
+        <div class="img-wrapper d-xl-none">
+          <img src="images/profile-pic-2-circle.png" alt="hehe" class="img-behind-text">
+        </div>
+      </div>
+  
+      <div class="img-section col-xl-6 d-none d-xl-block">
+        <img src="images/profile-pic-2-circle.png" alt="hehe">
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- About me section -->
+  <div class="container-fluid" id="about">
+    <div class="about-section">
+      <h2 class="about-title">About Me</h2>
+      <div class="about-desc">
+        <!-- <p>As a data scientist with a background in computer science, I excel in data analysis and machine learning. Currently pursuing an M.Tech in Computer Science and Technology at Jawaharlal Nehru University, I continue to enhance my expertise in advanced computational methods. With a B. Tech from GGSIPU, I am skilled in Python, SQL, R, TensorFlow, and Keras. My projects, including Sleep Disorder Detector and Graphical Reddit Opinion Miner, reflect my commitment to practical tech applications. My internship at FICCI involved contributing to a project focused on predicting the success rate of specific startups by analyzing their various characteristics. Let's connect to discuss how I can contribute to your data science initiatives.</p> -->
+        <p>As a data scientist with a background in computer science, I excel in data analysis and machine learning. Currently pursuing an M.Tech in Computer Science and Technology at Jawaharlal Nehru University and building on my B.Tech in Computer Science and Engineering from GGSIPU. I am skilled in Python, SQL, R, TensorFlow, and Keras, and I continue to enhance my expertise in advanced computational methods. My projects, including Sleep Disorder Detector and Graphical Reddit Opinion Miner, reflect my commitment to practical tech applications. My internship at FICCI involved contributing to a project focused on predicting the success rate of specific startups by analyzing their various characteristics. Let's connect to discuss how I can contribute to your data science initiatives.</p>
+      </div>
+      <div class="about-info">
+        <ul class="about-list">
+          <li class="item-custom"><span class="li-span1">Profile:</span> <span class="li-span2">Data Science &amp; Analytics</span></li>
+          <li class="item-custom"><span class="li-span1">Domain:</span> <span class="li-span2">Healthcare & Geospatial</span></li>
+          <li class="item-custom"><span class="li-span1">Education:</span> <span class="li-span2">M.Tech in Computer Science (Presently pursuing) & B.Tech in Computer Science</span></li>
+          <li class="item-custom"><span class="li-span1">Language:</span> <span class="li-span2">English, Hindi</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>  
+
+
+  <!-- Experience -->
+  <div class="container-fluid" id="experience">
+    <div class="exp-section">
+      <h1 class="exp-heading">Experience</h1>
+      <div class="row underline"></div>
+
+      <div class="row row-exp rounded">
+        <div class="col-xl-12">
+          <span class="duration">Aug 2023-  Dec 2023</span>
+          <h2 class="designation">Web Development and Data Science Intern</h2>
+          <div class="company">
+            <p class="comp-name">FICCI</p>
+            <img src="images/ficci_logo.png" alt="" class="comp-img">
+          </div>
+          <p class="exp-desc">Technologies:- Python, QGIS, Keras with Tensorflow, Deep learning.</p>
+          <ul>
+            <li><b>Activities performed as a Web Dev Intern</b>: Completed a project titled ”Automated Data Harvester” during my
+              B.Tech, utilizing Selenium and Python for efficient web scraping and data management. Developed a Node.js-based
+              interface to display real-time data, enhancing website functionality and user experience. Demonstrated strong technical
+              and analytical skills, contributing to informed decision-making and operational efficiency.</li>
+            <li><b>Activities performed as a Data Analyst Intern</b>: Contributed to a project focused on predicting the success rate of
+              specific startups by analyzing their various characteristics.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Projects -->
+  <div class="container-fluid projects-section" id="projects">
+    <h1 class="projects-heading">Projects</h1>
+    <div class="row underline"></div>
+    <div class="row row-projects justify-content-center">
+      <div class="col-xl-4 col-md-5">
+        <a href="https://github.com/Aditya00052/Graphical-Reddit-Opinion-Miner" target="_blank"><img src="./images/reddit.png" alt="" class="project-img"></a>  
+        <h3 class="project-title"><a href="https://github.com/Aditya00052/Graphical-Reddit-Opinion-Miner" target="_blank">Graphical Reddit Opinion Miner</a></h3>
+        <p class="project-desc">The Graphical Reddit Opinion Mining project uses Natural Language Processing
+          (NLP) to analyze and visualize sentiments in Reddit posts through graphical representations. By employing the Natural
+          Language Toolkit (NLTK) and Scikit-learn, the project performs tasks such as tokenization, classification, and semantic
+          analysis to process text data. Reddit posts are retrieved using the Reddit API with a bearer token, and a classification model
+          predicts the sentiment for user-specified phrases or keywords. The results are plotted on a graph, offering a clear visualization
+          of the sentiment trends.</p>
+      </div>
+      <div class="col-xl-4 col-md-5">
+        <!-- <a href="" target="_blank" class="project-img" style="background-image: url(https://media.post.rvohealth.io/wp-content/uploads/2020/02/sleep-sleeping-bed-732x549-thumbnail.jpg);"></a> -->
+        <a href=""><img src="./images/sleep-2.png" alt="" class="project-img"></a>
+        <h3 class="project-title"><a href="">Sleep Disorder Detector</a></h3>
+        <p class="project-desc">The Sleep Disorder Detector predicts Obstructive Sleep Apnea (OSA) by analyzing user-supplied
+          records, combining smart watch data and questionnaire responses. This project offers early detection, helping users seek timely
+          medical intervention. Due to the COVID-19 outbreak, many people acquired health monitoring devices like blood pressure
+          monitors and oxygen saturation monitors to track their health at home. Post-pandemic, these devices often remain idle. This
+          research proposes repurposing these devices to gather valuable data for predictive health analytics, developing models for
+          conditions like OSA.</p>
+      </div>
+      <div class="col-xl-4 col-md-5">
+        <a href="https://nutricompass.streamlit.app/" target="_blank"><img src="./images/nutricompass-project-pic-1.jpg" alt="" class="project-img"></a>
+        <h3 class="project-title"><a href="https://github.com/Aditya00052/NutriCompass" target="_blank">NutriCompass</a></h3>
+        <p class="project-desc">The NutriCompass project leverages Google's Gemini Pro AI to analyze meal images and provide detailed
+           nutritional insights. Built with Streamlit, the application allows users to upload a meal image, which is processed by 
+           Gemini AI to determine calorie content and a breakdown of key nutrients. The app integrates the Python Imaging Library (PIL) 
+           for image handling, ensuring seamless processing. Users can view the uploaded image and initiate analysis through an 
+           interactive interface. Results are presented in a user-friendly format, helping individuals make informed dietary decisions 
+           by understanding the nutritional profile of their meals.</p>
+      </div>
+      <div class="col-xl-4 col-md-5">
+        <!-- <a href="" target="_blank" class="project-img" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banana-Single.jpg/2324px-Banana-Single.jpg);"></a> -->     <!--  Here Img is cropped-->
+        <a href=""><img src="./images/amazon-project-pic-1.jpg" alt="" class="project-img"></a>                            <!-- Here img is not cropped(better) -->
+        <h3 class="project-title"><a href="">Automated Amazon Price Tracker</a></h3>
+        <p class="project-desc"> The Automated Amazon Price Tracker monitors daily product prices and sends email
+          alerts when they drop below a set threshold. This project offers cost savings, convenience, and customization, allowing you to
+          manage your budget effectively. It provides hands-on experience with Python and web scraping, and can be scaled to include
+          other platforms and features</p>
+      </div>
+      <div class="col-xl-4 col-md-5">
+        <!-- <a href=""><img src="https://cdn.dribbble.com/users/997070/screenshots/3903440/media/b2964dc20084dbbce472dbf01294a876.png?resize=400x300&vertical=center" alt="" class="project-img"></a>   -->
+        <a href=""><img src="./images/rain-project.png" alt="" class="project-img"></a>
+        <h3 class="project-title"><a href="">Automated Rain Alert</a></h3>
+        <p class="project-desc">The Automated Rain Alert app notifies users each morning about potential rain, streamlining daily
+          weather checks for enhanced convenience. This project offers timely weather updates, helping users plan their day effectively.
+          It provides practical experience with API integration and automation. The app helps us stay prepared and informed with its
+          user-friendly weather alert system.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- GitHub -->
+  <div class="container github-section">
+    <div class="row row-github">
+      <h2 class="github-heading">More projects on <span style="color: #ffbd39;">Github</span></h2>
+    </div>
+    <div class="row">
+      <h4>I love to solve business problems &amp; uncover hidden data stories </h4>
+    </div>
+    <div class="row">
+      <a href="https://github.com/Aditya00052?tab=repositories" target="_blank"><button type="button" class="btn btn-outline-dark rounded-pill custom-btn-github">GitHub</button></a>
+    </div>
+  </div>
+
+
+
+  <!-- Education -->
+  <div class="container-fluid education-section" id="education">
+    <h1 class="exp-heading">Education</h1>
+    <div class="row underline"></div>
+    <div class="row row-edu justify-content-center">
+      
+      <div class="col-xl-6 col-edu">
+        <div class="edu-contents rounded">
+          <span class="duration">2024-Present</span>
+          <h2 class="designation">M.Tech in Computer Science and Technology</h2>
+          <span class="comp-name">Jawaharlal Nehru University</span>
+          <p class="courses">Courses: Machine Learning, Natural Language Processing, Digital Image Processing, Database Management Systems, Design and Analysis of Algorithms</p>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-edu">
+        <div class="edu-contents rounded">
+          <span class="duration">2020-2024</span>
+          <h2 class="designation">B.Tech in Computer Science and Engineering</h2>
+          <span class="comp-name">Guru Gobind Singh Indraprastha University</span>
+          <p class="courses">Courses: Machine Learning, Database Management Systems, Data Structures and Algorithms, Object Oriented Programming(C++,Java), Operating Systems, Web Technology</p>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+
+
+  <!-- Skills and Expertise -->
+  <div class="container-fluid skills-expertise-section" id="skills">
+    <h1 class="exp-heading">Skills and Expertise</h1>
+    <div class="row underline"></div>
+    <div class="skills-section">
+      <h2 class="skills-heading">Skills</h2>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">Python</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">Machine Learning</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">Deep Learning</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">NLP</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">R</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">Version Control (Git/GitHub)</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">SQL</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">SQLite</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">MS Excel</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">Bootstrap</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">Keras</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">TensorFlow</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">HTML5</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">CSS3</button>
+          <button type="button" class="btn btn-outline-dark rounded-pill custom-btn-skills">C++</button>
+        </div>
+      </div>
+    </div>
+    <div class="expertise-section">
+      <h2 class="skills-heading">Expertise</h2>
+      <div class="row row-projects">
+        <div class="col-xl-4 col-md-5">
+          <a class="project-img" style="background-image: url(./images/expertise-1.webp);"></a>
+          <h3 class="project-title">Data Scientist</h3>
+          <p class="project-desc">As a data scientist with a strong foundation in computer science and data analysis, I specialize in using advanced machine learning techniques and statistical methods to uncover actionable insights from complex datasets. Proficient in Python, TensorFlow, and Keras, I have also developed real-time data analysis projects like a Sleep Disorder Detector application and Graphical Reddit Opinion Miner, demonstrating my ability to apply cutting-edge technologies to solve real-world problems.</p>
+        </div>
+        <div class="col-xl-4 col-md-5">
+          <!-- <a href="" target="_blank" class="project-img" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banana-Single.jpg/2324px-Banana-Single.jpg);"></a> -->     <!--  Here Img is cropped-->
+          <img src="./images/expertise-2.webp" alt="" class="project-img">                      <!-- Here img is not cropped(better) -->
+          <h3 class="project-title">Machine learning Engineer</h3>
+          <p class="project-desc">As a Machine Learning Engineer, I bring a robust understanding of machine learning and deep learning, both in theory and practice. Proficient in Python, scikit-learn, Keras, and TensorFlow, I have developed and deployed models for diverse challenges, including accessibility solutions and health data analysis. My projects demonstrate my capability to innovate and apply machine learning techniques to enhance technology.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Contact Me Section -->
+  <div class="container-fluid contact-section" id="contact">
+    <div class="row">
+      <h1 class="contact-heading-1">Contact Me</h1>
+      <p class="contact-heading-2">Below are the details to reach out to me!</p>
+    </div>
+    <div class="row contact-info">
+      <div class="col-xl-3 col-md-6">
+        <div class="circle-backdrop">
+          <i class="fa-solid fa-signs-post"></i>
+        </div>
+        <h3>Address</h3>
+        <p>Moti Bagh, New Delhi</p>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="circle-backdrop">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <h3>Contact Number</h3>
+        <p>+91 8369090922</p>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="circle-backdrop">
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+        <h3>Email Address</h3>
+        <p>adityasingh244516@gmail.com</p>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="circle-backdrop">
+          <i class="fa-solid fa-earth-americas"></i>
+        </div>
+        <h3>Download Resume</h3>
+        <p><a href="https://drive.google.com/file/d/1QAoPpOusyElQ5OCw3XgOPOMOClCyGPFZ/view?usp=drive_link" target="_blank">Resume link</a></p>
+      </div>
+    </div>
+
+
+    <div class="row contact-social-links">
+      <ul class="social-list">
+        <li class="social-item">
+          <p class="find-me-on">Find me on</p>
+        </li>
+        <li class="social-item">
+          <a href="https://www.linkedin.com/in/aditya-singh-57aa86216/" target="_blank">
+            <div class="circle-backdrop-2">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.instagram.com/aditya.singh51/"  target="_blank">
+            <div class="circle-backdrop-2">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+
+
+
+
+    
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+<!-- Align items:
+ use flexbox
+ justify-content: center
+ align-items: center -->
+
